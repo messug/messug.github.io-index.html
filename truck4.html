@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TRUCK RENTAL</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+     <h1><span><img src="images/Logo.jpg" class="logo"> <span>  UNIDO </span>  TRUCK <span>RENTAL <img src="images/Logo.jpg" class="logo"></span> </h1>
+    </header>
+     <!--====> HOMECONTENT <====--->
+<section  class="home contect" id="home">
+    <div class="elevator-speech">
+        <h1>Elevate Your Winter Experience</h1>
+        <p class="description">with <strong>UNIDO</Strong>, the premier snow plow truck rental service.</p>
+    </div>
+    
+    <button id="show-more-button">Show More</button>
+
+    <div id="more-info" class="hidden">
+        <p>When the snow falls and your driveway, parking lot, or business needs clearing, we've got you covered.</p> <br>
+        <p>Our fleet of powerful snow plow trucks is at your service, ready to tackle the toughest winter challenges.</p>
+        <p>With <strong>UNIDO</strong>, you get the reliability, convenience, and affordability you deserve.</p> <br>
+        <p>Whether you're a homeowner looking to keep your property safe and accessible or a business owner ensuring  <br>your customers can reach you, we've got the right solution for you.</p>
+    </div>
+    
+    <button id="show-less-button" class="hidden">Show Less</button>
+</section>
+
+    
+
+
+  
+
+<!--====> ABOUT UNIDO CONTENT <====--->
+   
+   
+   
+   
+    <section class="about section" id="about">
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="images/chevy-silverado.jpg" alt="UNIDO Truck Rental">
+                </div>
+    
+                <div class="about__text">
+                    <h1><strong>UNIDO</strong></h1> <br>
+                    <p> <strong>Truck Model = CHEVROLET SILVERADO</strong></p> <br>
+                    <p class="content-about">The Chevy Silverado 1500 is great because if you have 4-wheel drive and a regular cab, an enviable Snow Plow Prep Package is available as an add-on. </p> <br>
+                    <p>This set up will bring you an 170-amp alternator, a wiring harness, a high-capacity transmission oil cooler, and extra heavy-duty suspension. Unfortunately Chevrolet won’t put the Plow Package on any of the extended cab models, but we’ve seem them plowed with just fine.</P> <br>
+                    <P>They say that "Chevy runs deep," and it holds true in deep snow!</p> <br> 
+                    
+                    <p> <strong>Description:-</strong> This package includes Computer-selected springs for snowplow application, 190-amp alternator on 6.8L and 7.3L gas engines, 410 Amp Dual Alternator on 6.7L Diesel engines, 250-amp alternator on 6.7L Diesel engine, Rapid-heat supplemental cab heater on 6.7L Power Stroke V8 Turbo Diesel engine.</p> <br>
+                    <p> <strong>Price:- $60CAD/Day</strong></p>
+                    </p>
+                </div>
+            </div>
+    </section>
+
+
+    
+    <div class="booking-form">
+        <h2>Book a Truck</h2>
+        <form onsubmit="showAlert()">
+        <form action="process_payment.php" method="post">
+            <input type="hidden" name="model" value="<?php echo $_GET['model']; ?>">
+            
+            <label for="pickup-date">Pickup Date:</label>
+            <input type="date" id="pickup-date" name="pickup-date" required>
+
+            <label for="pickup-location">Pickup Location:</label>
+            <input type="text" id="pickup-location" name="pickup-location" required>
+
+            <label for="duration">Rental Duration (hours):</label>
+            <input type="number" id="duration" name="duration" required>
+
+            <!-- Include options for payment methods here (credit card, PayPal, etc.) -->
+            <label for="payment-method">Select Payment Method:</label>
+            <select id="payment-method" name="payment-method">
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="master-card">Master Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+<!--====<p>Extreme weather calls for an extreme truck. When it snows, everything stops until the plow makes way. Snow removal is a tough job; so we've designed our severe-duty trucks to meet that challenge head-on. To make sure the job's done safely, our snow plows come with your choice of Halogen or LED headlamps that cut through fog and dark nights for maximum visibility. To push that snow out of the way, our plows boast best-in-class single-rail frame strength less likely to succumb to the element and corrode. Wide track axles ensure you can find your way from the windiest side streets to the widest thoroughfares..</p> ====-->      
+    
+ <!--===== contact =====-->
+
+<section class="contact us" id="contact"></section>
+<footer>
+    <div class="home-sci"   id="contact">
+        <p>Contact Us</p>
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-github'></i></a>
+        <a href="#"><i class='bx bxl-whatsapp'></i></a>
+      </div> 
+      <p> We are located at this location.</p>
+      <div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20062.000742314656!2d-113.9741216!3d51.0577021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53717b482ec33dc1%3A0x7a28e25431f6294f!2s224%20Maidstone%20Green%20NE%2C%20Calgary%2C%20AB%20T2A%203Z3!5e0!3m2!1sen!2sca!4v1698283708773!5m2!1sen!2sca" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>&copy; 2023 UNIDO Truck Rental</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
