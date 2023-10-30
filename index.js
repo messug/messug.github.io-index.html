@@ -16,6 +16,33 @@ showLessButton.addEventListener('click', function () {
     showMoreButton.classList.remove('hidden');
 });
 
+function smoothScroll(target) {
+  const targetElement = document.querySelector(target);
+  if (targetElement) {
+      window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth',
+      });
+  }
+}
+const navLinks = document.querySelectorAll('nav a');
+navLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent the default behavior of link clicks
+        const targetId = link.getAttribute('href');
+        smoothScroll(targetId);
+    });
+});
+
+
+
+
+
+
+
+
+
+
 //functionality
 
 
