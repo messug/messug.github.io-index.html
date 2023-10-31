@@ -57,16 +57,13 @@ socialMediaLinks.forEach((link) => {
   });
 });
 
-// index.js or in a <script> tag in your HTML
 document.addEventListener("DOMContentLoaded", function () {
   const sr = ScrollReveal({
-  origin: 'bottom',   // Change this to the desired origin (top, bottom, left, right, or center)
-  distance: '20px',   // Adjust this value to control the distance of the animation
-  duration: 1000,     // Animation duration in milliseconds
-  reset: true,        // Resets the animation on each view
+  origin: 'bottom',  
+  distance: '20px',   
+  duration: 1000,   
+  reset: true,      
 });
-
-// Add individual reveal animations for elements
 sr.reveal('.elevator-speech', {});
 sr.reveal('#show-more-button', { delay: 200 });
 sr.reveal('#more-info', { delay: 400 });
