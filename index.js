@@ -34,15 +34,6 @@ navLinks.forEach(link => {
     });
 });
 
-
-
-
-
-
-
-
-
-
 //functionality
 
 
@@ -53,26 +44,16 @@ document.addEventListener('DOMContentLoaded'), function () {
       event.preventDefault()};
 function showAlert() {
   alert("Form submitted! Your snow plow truck is booked.");
-  console.log("Hello");
 };
-function bookTruck() {
-  window.location.href = 'booking.html';
-}
-
-document.getElementById('bookNowButton').addEventListener('click', bookTruck);
-
-
-
 
 // JavaScript code for making social media links interactive
-
 const socialMediaLinks = document.querySelectorAll('.home-sci a');
 
 socialMediaLinks.forEach((link) => {
   link.addEventListener('click', function (e) {
     e.preventDefault(); // Prevent the default behavior (navigating to the link)
     const url = link.getAttribute('href');
-    window.open(url, 'messug@github.com'); // Open the link in a new tab
+    window.open(url, 'messug'); // Open the link in a new tab
   });
 });
 
