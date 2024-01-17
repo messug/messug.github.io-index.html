@@ -1,4 +1,7 @@
 /* Add CSS styles to your website */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: cursive;
   margin:10px;
