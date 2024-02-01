@@ -1,5 +1,8 @@
 /* Add CSS styles to your website */
-html {scroll-behavior: smooth;
+
+html {
+  
+  scroll-behavior: smooth;
  
 }
 body {
@@ -57,12 +60,12 @@ h2:hover span{
 
 
 header {
-  background-color: rgb(66, 66, 66);
+  background-color: rgb(36, 35, 35);
   color: #AEB6CBff;
   text-align: center;
-  padding: 2px;
-  margin-bottom: 10px;
-  height: 180px;
+  padding: 1px;
+  margin-bottom: 5px;
+  height: 160px;
 }
 .navi-bar{
   margin: .1px;
@@ -98,6 +101,10 @@ nav ul li {
 
 }
 
+nav li{
+  color: #aca8a8;
+}
+
 /* home content */
 
 body {
@@ -111,9 +118,37 @@ body {
 .logo__new{
   background-color: #0f0606;
 }
+.navbar{
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #bfc5cd;
+}
+.slideshow-container {
+  max-width: 1400px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  animation: fadeEffect 7s ease-in-out infinite; /* Adjust the duration and timing function as needed */
+}
+
+@keyframes fadeEffect {
+  0%, 100% {
+    opacity: 0;
+  }
+  25%, 75% {
+    opacity: 1;
+  }
+}
+
 
 .elevator-speech {
-  margin-top: 100px;
+  margin-top: 0px;
   transition: opacity 0.5s;
 
  
@@ -125,11 +160,6 @@ body {
   font-size: xx-large;
   line-height: 2rem;
  
-}
-.navbar{
-  font-size: 30px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: #bfc5cd;
 }
 
 button {
@@ -241,8 +271,8 @@ body {
   gap: 2rem;
   align-items: center;
   margin-right: auto;
-  padding-left: 70px;
-  margin-left: 10px;
+  padding-left: 75px;
+  margin-left: 15px;
 }
 .work__container:hover {
   color: #e7d4d4;
